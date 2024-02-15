@@ -1,24 +1,102 @@
-@keyframes rotateAnimation {
-  0% {
-    transform: rotate(5deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 .title {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 2px;
   font-size: 40px;
   color: aliceblue;
   font-weight: 550;
   text-align: center;
   margin-top: 200px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.list_item {
+  background-color: rgb(245, 111, 111);
+  width: 50px;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.list_item:hover {
+  transform: translateY(-20px);
+}
+
+.list_item_first {
+  background-color: rgb(245, 111, 111);
+  width: 50px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.list_item_first:hover {
+  transform: translateY(-20px);
+}
+
+.list_item_last {
+  background-color: rgb(245, 111, 111);
+  width: 50px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.list_item_last:hover {
+  transform: translateY(-20px);
+}
+
+.info {
+  color: aliceblue;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 111, 111);
+  width: 425px;
+  height: 25px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.list_reg {
+  margin-top: 30px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.list_reg_item {
+  color: aliceblue;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 111, 111);
+  width: 200px;
+  height: 25px;
+  border-radius: 12px;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 190px;
+}
+
+.arrow_one {
+  font-size: 50px;
+  color: aliceblue;
+  rotate: -50deg;
+}
+
+.arrow_two {
+  font-size: 50px;
+  color: aliceblue;
+  rotate: 50deg;
 }
 
 .phone_book {
@@ -39,7 +117,7 @@
 
 .list {
   display: flex;
-  gap: 20px;
+  gap: 110px;
   align-items: center;
   justify-content: center;
 }
@@ -48,18 +126,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
+  background-color: rgb(245, 111, 111);
+  width: 210px;
   height: 40px;
   text-decoration: none;
   font-size: 25px;
-  border-radius: 7px;
+  border-radius: 15px;
   font-weight: 500;
   color: aliceblue;
   transition: box-shadow 0.3s ease-in-out;
 }
 
 .register_btn:hover {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 13px rgba(245, 145, 145, 0.465);
+}
+
+.login_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 111, 111);
+  width: 125px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 15px;
+  font-weight: 500;
+  color: aliceblue;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.login_btn:hover {
+  box-shadow: 0 5px 13px rgba(245, 145, 145, 0.465);
 }
 
 .my_contacts_btn {
@@ -74,7 +172,7 @@
   font-size: 25px;
   border-radius: 7px;
   font-weight: 500;
-  color: aliceblue;
+  color: black;
   transition: box-shadow 0.3s ease-in-out;
 }
 

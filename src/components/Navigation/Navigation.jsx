@@ -24,14 +24,23 @@ const Navigation = () => {
 
   return (
     <div>
-      <header className={css.header}>
-        <NavLink to="/" className={css.btn}>
-          Home
-        </NavLink>
-        {isLoggedin && (
+      {isLoggedin && (
+        <header className={css.header}>
           <>
-            <NavLink to="/contacts" className={css.btn}>
-              Contacts
+            <NavLink to="/love" className={css.btn}>
+              Хронологія наших відносин
+            </NavLink>
+            <NavLink to="/love" className={css.btn}>
+              Наші топові фоточки
+            </NavLink>
+            <NavLink to="/love" className={css.btn}>
+              Гра
+            </NavLink>
+            <NavLink to="/love" className={css.btn}>
+              Для батьків
+            </NavLink>
+            <NavLink to="/love" className={css.btn}>
+              Для Ані
             </NavLink>
             <span className={css.user_box}>
               <p className={css.user_email}>{userEmail}</p>
@@ -45,8 +54,9 @@ const Navigation = () => {
               </button>
             </span>
           </>
-        )}
-      </header>
+        </header>
+      )}
+
       <main>
         <Suspense fallback={null}>
           <Outlet />

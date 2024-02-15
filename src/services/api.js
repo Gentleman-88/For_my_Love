@@ -71,39 +71,3 @@ export const apiLogoutUser = createAsyncThunk(
     }
   }
 );
-
-export const fetchContacts = createAsyncThunk(
-  'contacts/fetchAll',
-  async (_, thunkAPI) => {
-    try {
-      const { data } = await $authInstance.get('/contacts');
-      return data;
-    } catch (e) {
-      return thunkAPI.rejectWithValue(e.message);
-    }
-  }
-);
-
-export const addContact = createAsyncThunk(
-  'contacts/addContact',
-  async (dataForAdd, thunkAPI) => {
-    try {
-      const { data } = await $authInstance.post('/contacts', dataForAdd);
-      return data;
-    } catch (e) {
-      return thunkAPI.rejectWithValue(e.message);
-    }
-  }
-);
-
-export const deleteContact = createAsyncThunk(
-  'contacts/deleteContact',
-  async (contactId, thunkAPI) => {
-    try {
-      const { data } = await $authInstance.delete(`/contacts/${contactId}`);
-      return data;
-    } catch (e) {
-      return thunkAPI.rejectWithValue(e.message);
-    }
-  }
-);

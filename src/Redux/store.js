@@ -1,4 +1,3 @@
-import { contactsReducer } from './Contacts/contactReducer';
 import { configureStore } from '@reduxjs/toolkit';
 
 import {
@@ -22,7 +21,6 @@ const userConfig = {
 
 export const store = configureStore({
   reducer: {
-    contacts: contactsReducer,
     user: persistReducer(userConfig, authReducer),
   },
   middleware: getDefaultMiddleware =>

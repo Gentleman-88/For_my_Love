@@ -10,11 +10,7 @@ const PrivateRoute = ({ children }) => {
   const isLoggedIn = useSelector(selectUserIsLoggedIn);
   const isRefreshing = useSelector(selectUserIsRefreshing);
 
-  return !isLoggedIn && !isRefreshing ? (
-    <Navigate to="/login" replace />
-  ) : (
-    children
-  );
+  return !isLoggedIn && !isRefreshing ? <Navigate to="/" replace /> : children;
 };
 
 export default PrivateRoute;

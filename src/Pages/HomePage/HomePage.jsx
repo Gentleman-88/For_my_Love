@@ -9,30 +9,37 @@ const HomePage = () => {
 
   return (
     <div>
-      <h1 className={css.title}>
-        Welcome to <span className={css.phone_book}>Phone Book</span>
-      </h1>
       {!isLoggedin ? (
         <>
+          <ul className={css.title}>
+            <li className={css.list_item_first}>Х</li>
+            <li className={css.list_item}>Е</li>
+            <li className={css.list_item}>Л</li>
+            <li className={css.list_item}>Л</li>
+            <li className={css.list_item}>О</li>
+            <li className={css.list_item}>О</li>
+            <li className={css.list_item_last}>У</li>
+          </ul>
+          <p className={css.info}>Цей сайт зроблений для Катюші на 8 березня</p>
+          <ul className={css.list_reg}>
+            <li className={css.list_reg_item}>Якщо перший раз</li>
+            <li className={css.list_reg_item}>Якщо не перший раз</li>
+          </ul>
+          <div className={css.arrows}>
+            <span className={css.arrow_one}>←</span>
+            <span className={css.arrow_two}>→</span>
+          </div>
           <ul className={css.list}>
-            <li>
-              <NavLink to="/register" className={css.register_btn}>
-                Sign up
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/login" className={css.register_btn}>
-                Login
-              </NavLink>
-            </li>
+            <NavLink to="/register" className={css.register_btn}>
+              Зареєструватись
+            </NavLink>
+            <NavLink to="/login" className={css.login_btn}>
+              Ввійти
+            </NavLink>
           </ul>
         </>
       ) : (
-        <>
-          <NavLink to="/contacts" className={css.my_contacts_btn}>
-            My contacts
-          </NavLink>
-        </>
+        <></>
       )}
     </div>
   );
