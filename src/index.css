@@ -1,11 +1,12 @@
 @import-normalize; /* bring in normalize.css styles */
 
 body {
-  background-color: rgb(184, 224, 248);
+  background-color: #ffffff;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url('../src/Pages/images/love.jpg');
+  background-size: cover;
   margin: 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 code {

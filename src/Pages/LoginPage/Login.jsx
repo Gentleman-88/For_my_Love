@@ -23,10 +23,10 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <h1 className={css.title}>Login</h1>
+    <div className={css.login_div}>
+      <h1 className={css.title}>Ввійти</h1>
       <form onSubmit={onSubmit} className={css.log_in}>
-        <label className={css.label}>Email: </label>
+        <label className={css.label}>Емейл: </label>
         <input
           type="text"
           name="userEmail"
@@ -34,7 +34,7 @@ const Login = () => {
           className={css.input}
           required
         />
-        <label className={css.label}>Password: </label>
+        <label className={css.label}>Пароль: </label>
         <input
           type="text"
           name="userPassword"
@@ -44,7 +44,7 @@ const Login = () => {
           required
         />
         <button type="submit" className={css.login_btn}>
-          Sign in
+          Ввійти
         </button>
       </form>
     </div>

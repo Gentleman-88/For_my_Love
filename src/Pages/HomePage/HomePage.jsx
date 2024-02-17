@@ -8,19 +8,22 @@ const HomePage = () => {
   const isLoggedin = useSelector(selectUserIsLoggedIn);
 
   return (
-    <div>
+    <div className={css.homePage}>
       {!isLoggedin ? (
-        <>
+        <div className={css.hello_Page_Container}>
           <ul className={css.title}>
-            <li className={css.list_item_first}>Х</li>
+            <li className={css.list_item}>Х</li>
             <li className={css.list_item}>Е</li>
             <li className={css.list_item}>Л</li>
             <li className={css.list_item}>Л</li>
             <li className={css.list_item}>О</li>
             <li className={css.list_item}>О</li>
-            <li className={css.list_item_last}>У</li>
+            <li className={css.list_item}>У</li>
           </ul>
-          <p className={css.info}>Цей сайт зроблений для Катюші на 8 березня</p>
+          <p className={css.info}>
+            Цей сайт зроблений для тебе Катюша. Думаю тобі понравиться і буде
+            дуже цікаво
+          </p>
           <ul className={css.list_reg}>
             <li className={css.list_reg_item}>Якщо перший раз</li>
             <li className={css.list_reg_item}>Якщо не перший раз</li>
@@ -37,7 +40,7 @@ const HomePage = () => {
               Ввійти
             </NavLink>
           </ul>
-        </>
+        </div>
       ) : (
         <></>
       )}

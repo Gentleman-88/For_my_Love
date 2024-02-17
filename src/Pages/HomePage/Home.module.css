@@ -1,20 +1,32 @@
-.title {
+.hello_Page_Container {
+  margin-left: 40px;
+  background-color: rgba(224, 217, 217, 0.338);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  margin-top: 155px;
+  padding: 20px;
+  height: 350px;
+  width: 700px;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+
+.title {
+  border: 1px dashed;
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 7px;
   justify-content: center;
-  gap: 2px;
   font-size: 40px;
   color: aliceblue;
   font-weight: 550;
   text-align: center;
-  margin-top: 200px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .list_item {
-  background-color: rgb(245, 111, 111);
   width: 50px;
-  border-radius: 4px;
   transition: transform 0.3s ease;
 }
 
@@ -22,75 +34,48 @@
   transform: translateY(-20px);
 }
 
-.list_item_first {
-  background-color: rgb(245, 111, 111);
-  width: 50px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  transition: transform 0.3s ease;
-}
-
-.list_item_first:hover {
-  transform: translateY(-20px);
-}
-
-.list_item_last {
-  background-color: rgb(245, 111, 111);
-  width: 50px;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
-  transition: transform 0.3s ease;
-}
-
-.list_item_last:hover {
-  transform: translateY(-20px);
-}
-
 .info {
+  letter-spacing: 2px;
   color: aliceblue;
-  font-size: 19px;
+  font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(245, 111, 111);
-  width: 425px;
-  height: 25px;
-  margin: 0 auto;
-  border-radius: 12px;
+  border-radius: 7px;
+  padding: 3px;
+  width: 500px;
+  height: 80px;
 }
 
 .list_reg {
   margin-top: 30px;
   display: flex;
   gap: 25px;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .list_reg_item {
+  letter-spacing: 2px;
   color: aliceblue;
-  font-size: 19px;
+  font-size: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: rgb(245, 111, 111);
-  width: 200px;
+  width: 220px;
   height: 25px;
   border-radius: 12px;
 }
 
 .arrows {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 10px;
-  gap: 190px;
+  gap: 260px;
 }
 
 .arrow_one {
   font-size: 50px;
   color: aliceblue;
-  rotate: -50deg;
+  rotate: -90deg;
 }
 
 .arrow_two {
@@ -117,38 +102,36 @@
 
 .list {
   display: flex;
-  gap: 110px;
-  align-items: center;
-  justify-content: center;
+  gap: 80px;
 }
 
 .register_btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(245, 111, 111);
   width: 210px;
   height: 40px;
   text-decoration: none;
   font-size: 25px;
   border-radius: 15px;
   font-weight: 500;
+  border: 1px dashed;
   color: aliceblue;
   transition: box-shadow 0.3s ease-in-out;
 }
 
 .register_btn:hover {
-  box-shadow: 0 5px 13px rgba(245, 145, 145, 0.465);
+  box-shadow: 0 5px 13px rgb(213, 127, 127);
 }
 
 .login_btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(245, 111, 111);
   width: 125px;
   height: 40px;
   text-decoration: none;
+  border: 1px dashed;
   font-size: 25px;
   border-radius: 15px;
   font-weight: 500;
@@ -157,7 +140,7 @@
 }
 
 .login_btn:hover {
-  box-shadow: 0 5px 13px rgba(245, 145, 145, 0.465);
+  box-shadow: 0 5px 13px rgb(213, 127, 127);
 }
 
 .my_contacts_btn {

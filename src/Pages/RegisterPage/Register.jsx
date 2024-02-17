@@ -24,19 +24,19 @@ const Register = () => {
   };
 
   return (
-    <div>
-      <h1 className={css.title}>Sign In</h1>
+    <div className={css.register_div}>
+      <h1 className={css.title}>Зареєструватись</h1>
       <form onSubmit={onSubmit} className={css.sign_in}>
-        <label className={css.label}>Name: </label>
+        <label className={css.label}>Ім'я: </label>
         <input
           type="text"
           name="userName"
-          placeholder="Name"
+          placeholder="Ім'я"
           minLength={2}
           required
           className={css.input}
         />
-        <label className={css.label}>Email: </label>
+        <label className={css.label}>Емейл: </label>
         <input
           type="text"
           name="userEmail"
@@ -44,7 +44,7 @@ const Register = () => {
           required
           className={css.input}
         />
-        <label className={css.label}>Password: </label>
+        <label className={css.label}>Пароль: </label>
         <input
           type="text"
           name="userPassword"
@@ -54,7 +54,7 @@ const Register = () => {
           className={css.input}
         />
         <button type="submit" className={css.register_btn}>
-          Sign up
+          Зареєструватись
         </button>
       </form>
     </div>
