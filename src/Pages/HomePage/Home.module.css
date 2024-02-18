@@ -51,8 +51,6 @@
   margin-top: 30px;
   display: flex;
   gap: 25px;
-  /* align-items: center;
-  justify-content: center; */
 }
 
 .list_reg_item {
@@ -82,17 +80,6 @@
   font-size: 50px;
   color: aliceblue;
   rotate: 50deg;
-}
-
-.phone_book {
-  rotate: 5deg;
-  background-color: aliceblue;
-  color: #6b705c;
-  border-radius: 7px;
-  display: flex;
-  width: 230px;
-  align-items: center;
-  justify-content: center;
 }
 
 .phone_book:hover {

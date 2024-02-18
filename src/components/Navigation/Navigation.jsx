@@ -16,7 +16,7 @@ const Navigation = () => {
 
   const dispatch = useDispatch();
 
-  const userEmail = userData?.email ?? "Could't get user email";
+  const userName = userData?.name ?? "Could't get user name";
 
   const handleLogOut = () => {
     dispatch(apiLogoutUser());
@@ -30,27 +30,18 @@ const Navigation = () => {
             <NavLink to="/love" className={css.btn}>
               Хронологія наших відносин
             </NavLink>
-            <NavLink to="/love" className={css.btn}>
-              Наші топові фоточки
-            </NavLink>
-            <NavLink to="/love" className={css.btn}>
+            <NavLink to="/Game" className={css.btn}>
               Гра
             </NavLink>
-            <NavLink to="/love" className={css.btn}>
-              Для батьків
-            </NavLink>
-            <NavLink to="/love" className={css.btn}>
-              Для Ані
-            </NavLink>
             <span className={css.user_box}>
-              <p className={css.user_email}>{userEmail}</p>
+              <p className={css.user_email}>{userName}</p>
               <button
                 className={css.btn_logout}
                 onClick={handleLogOut}
                 disabled={isLoading}
                 type="button"
               >
-                Log out
+                Вийти
               </button>
             </span>
           </>

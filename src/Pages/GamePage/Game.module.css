@@ -1,0 +1,17 @@
+.game {
+  text-align: left; /* Змінено з center на left */
+  background-color: #ddc2cb;
+  min-height: 682px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: black;
+  overflow: hidden;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}

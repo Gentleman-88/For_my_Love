@@ -11,6 +11,7 @@ import RestrictedRoute from './RestrictedRoute/RestrictedRoute';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import { Loader } from './Loader/Loader';
 import { useAuth } from 'Hooks';
+import GamePage from 'Pages/GamePage/GamePage';
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -56,6 +57,14 @@ export const App = () => {
           element={
             <PrivateRoute>
               <Love />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/Game"
+          element={
+            <PrivateRoute>
+              <GamePage />
             </PrivateRoute>
           }
         />

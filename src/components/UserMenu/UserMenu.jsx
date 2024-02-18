@@ -7,7 +7,7 @@ const UserMenu = () => {
 
   return (
     <div>
-      <p>{userData.email}</p>
+      <p>{userData.name}</p>
       <button>Logout</button>
     </div>
   );
