@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Register from 'Pages/RegisterPage/Register';
 import Login from 'Pages/LoginPage/Login';
-import Contacts from 'Pages/LovePage/Love';
+import Love from 'Pages/LovePage/Love';
 import Navigation from './Navigation/Navigation';
 import HomePage from 'Pages/HomePage/HomePage';
 import { useDispatch } from 'react-redux';
@@ -55,7 +55,7 @@ export const App = () => {
           path="/love"
           element={
             <PrivateRoute>
-              <Contacts />
+              <Love />
             </PrivateRoute>
           }
         />

@@ -1,14 +1,7 @@
-import { AddContactForm, ContactList, Filter } from 'components';
 import React from 'react';
 
-const Contacts = () => {
-  return (
-    <div>
-      <AddContactForm />
-      <Filter />
-      <ContactList />
-    </div>
-  );
+const Love = () => {
+  return <div></div>;
 };
 
-export default Contacts;
+export default Love;
