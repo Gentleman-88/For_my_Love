@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import './TicTacToe.css';
 import GameOver from 'components/GameOver/GameOver';
 import GameState from '../../Redux/game/gameStore';
+import Reset from 'components/Reset/Reset';
 
 const PLAYER_X = 'X';
 const PLAYER_O = 'O';
@@ -21,7 +22,7 @@ const winningCombinations = [
   { combo: [2, 4, 6], strikeClass: 'strike-diagonal-2' },
 ];
 
-function checkWinner(tiles, setStrikeClass) {
+function checkWinner(tiles, setStrikeClass, setGameState) {
   for (const { combo, strikeClass } of winningCombinations) {
     const tileValue1 = tiles[combo[0]];
     const tileValue2 = tiles[combo[1]];
@@ -33,7 +34,18 @@ function checkWinner(tiles, setStrikeClass) {
       tileValue1 === tileValue3
     ) {
       setStrikeClass(strikeClass);
+      if (tileValue1 === PLAYER_X) {
+        setGameState(GameState.playerXWins);
+      } else {
+        setGameState(GameState.playerOWins);
+      }
+      return;
     }
+  }
+
+  const areAllTilesFiledIn = tiles.every(tile => tile !== null);
+  if (areAllTilesFiledIn) {
+    setGameState(GameState.draw);
   }
 }
 
@@ -44,10 +56,13 @@ const TicTacToe = () => {
   const [gameState, setGameState] = useState(GameState.inProgress);
 
   useEffect(() => {
-    checkWinner(tiles, setStrikeClass);
+    checkWinner(tiles, setStrikeClass, setGameState);
   }, [tiles]);
 
   const handleTileClick = index => {
+    if (gameState !== GameState.inProgress) {
+      return;
+    }
     if (tiles[index] !== null) {
       return;
     }
@@ -61,6 +76,13 @@ const TicTacToe = () => {
     }
   };
 
+  const handleReset = () => {
+    setGameState(GameState.inProgress);
+    setTiles(Array(9).fill(null));
+    setPlayerTurn(PLAYER_X);
+    setStrikeClass(null);
+  };
+
   return (
     <div>
       <h1 className="tic_title">Хрестеки-Нолікі</h1>
@@ -71,6 +93,7 @@ const TicTacToe = () => {
         strikeClass={strikeClass}
       />
       <GameOver gameState={gameState} />
+      <Reset gameState={gameState} onReset={handleReset} />
     </div>
   );
 };

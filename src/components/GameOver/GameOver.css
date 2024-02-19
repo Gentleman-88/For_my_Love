@@ -1,0 +1,12 @@
+.game-over {
+  text-align: center;
+  border: #87c2f6 3px;
+  background-color: rgba(224, 217, 217, 0.338);
+  backdrop-filter: blur(10px);
+  border-style: dashed;
+  border-radius: 7px;
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 1.5em;
+  color: black;
+}
