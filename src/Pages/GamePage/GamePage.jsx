@@ -1,12 +1,11 @@
 import React from 'react';
 import css from './Game.module.css';
-import Board from 'components/Board/Board';
+import TicTacToe from 'components/TicTacToe/TicTacToe';
 
 const GamePage = () => {
   return (
     <div className={css.game}>
-      <Board />
-      <h1 className={css.title}></h1>
+      <TicTacToe />
     </div>
   );
 };

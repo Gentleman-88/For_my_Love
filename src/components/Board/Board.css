@@ -1,0 +1,15 @@
+.board {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  cursor: pointer;
+  position: relative;
+}
+
+.right-border {
+  border-right: 3px dashed #87c2f6;
+}
+
+.bottom-border {
+  border-bottom: 3px dashed #87c2f6;
+}
