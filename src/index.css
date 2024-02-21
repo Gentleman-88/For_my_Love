@@ -3,7 +3,7 @@
 body {
   background-color: #ffffff;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url('../src/Pages/images/love.jpg');
+    url('../src/Pages/PhotoPage/images/love.jpg');
   background-size: cover;
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
