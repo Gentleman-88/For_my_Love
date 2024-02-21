@@ -2,63 +2,88 @@
   height: 60px;
   display: flex;
   align-items: center;
+  gap: 20px;
   background-color: rgba(224, 217, 217, 0.338);
   backdrop-filter: blur(10px);
   padding: 0 40px;
   box-shadow: 0 5px 13px rgb(213, 127, 127);
 }
 
-.navigation {
-  display: flex;
-  gap: 5px;
-}
-
-.user_box {
-  display: flex;
-  gap: 5px;
-  margin-left: auto;
-  align-items: center;
-  justify-content: center;
-}
-
-.user_email {
-  color: black;
-}
-
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
   height: 35px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 23px;
+  border: 1px dashed;
   border-radius: 7px;
   font-weight: 500;
-  color: black;
+  color: aliceblue;
   transition: box-shadow 0.3s ease-in-out;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   box-shadow: 0 5px 13px rgb(213, 127, 127);
 }
 
-.btn_logout {
+.btn_rel {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 30px;
-  font-size: 17px;
+  width: 295px;
+  height: 35px;
+  text-decoration: none;
+  font-size: 23px;
+  border: 1px dashed;
   border-radius: 7px;
-  border-style: none;
   font-weight: 500;
-  background-color: transparent;
-  color: black;
+  color: aliceblue;
   transition: box-shadow 0.3s ease-in-out;
-  cursor: pointer;
 }
 
-.btn_logout:hover {
+.btn_rel:hover,
+.btn_rel:focus {
+  box-shadow: 0 5px 13px rgb(213, 127, 127);
+}
+
+.btn_game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 35px;
+  text-decoration: none;
+  font-size: 23px;
+  border: 1px dashed;
+  border-radius: 7px;
+  font-weight: 500;
+  color: aliceblue;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn_game:hover,
+.btn_game:focus {
+  box-shadow: 0 5px 13px rgb(213, 127, 127);
+}
+
+.btn_photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 35px;
+  text-decoration: none;
+  font-size: 23px;
+  border: 1px dashed;
+  border-radius: 7px;
+  font-weight: 500;
+  color: aliceblue;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn_photo:hover,
+.btn_photo:focus {
   box-shadow: 0 5px 13px rgb(213, 127, 127);
 }

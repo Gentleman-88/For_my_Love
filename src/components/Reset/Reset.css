@@ -10,7 +10,7 @@
   border: 2px dashed #87c2f6;
   background-color: rgba(224, 217, 217, 0.338);
   backdrop-filter: blur(10px);
-  color: black;
+  color: aliceblue;
   transition: box-shadow 0.3s ease-in-out;
   cursor: pointer;
   margin: 0 auto;
