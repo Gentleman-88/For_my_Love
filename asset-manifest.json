@@ -1,14 +1,32 @@
 {
   "files": {
-    "main.css": "/For_my_Love/static/css/main.999db885.css",
-    "main.js": "/For_my_Love/static/js/main.a4a32c94.js",
+    "main.css": "/For_my_Love/static/css/main.dc91be53.css",
+    "main.js": "/For_my_Love/static/js/main.00dba133.js",
+    "static/media/photo_2024-02-21_08-34-24.jpg": "/For_my_Love/static/media/photo_2024-02-21_08-34-24.04ee30fd0aec076d8e6d.jpg",
     "static/media/love.jpg": "/For_my_Love/static/media/love.0a7eb0163fb4442faec9.jpg",
+    "static/media/photo_2024-02-21_08-34-32.jpg": "/For_my_Love/static/media/photo_2024-02-21_08-34-32.102e752d227f4516a3e9.jpg",
+    "static/media/photo_2024-02-21_09-06-52.jpg": "/For_my_Love/static/media/photo_2024-02-21_09-06-52.f6bdcbb6589510420bc5.jpg",
+    "static/media/photo_2024-02-21_09-06-48.jpg": "/For_my_Love/static/media/photo_2024-02-21_09-06-48.5ae0a120bf0c43cb83a9.jpg",
+    "static/media/photo_2024-02-21_09-06-56.jpg": "/For_my_Love/static/media/photo_2024-02-21_09-06-56.8749f52a453d0ca2e969.jpg",
+    "static/media/photo_2024-02-21_09-06-43.jpg": "/For_my_Love/static/media/photo_2024-02-21_09-06-43.dead21d143291443d8b2.jpg",
+    "static/media/photo_2024-02-21_09-06-36.jpg": "/For_my_Love/static/media/photo_2024-02-21_09-06-36.a4a8464dffa976b1b071.jpg",
+    "static/media/photo_2024-02-21_09-07-10.jpg": "/For_my_Love/static/media/photo_2024-02-21_09-07-10.added2ae21b69d0f0a3c.jpg",
+    "static/media/photo_2024-02-21_09-06-29.jpg": "/For_my_Love/static/media/photo_2024-02-21_09-06-29.9abdf84eeafc6ef01de4.jpg",
+    "static/media/photo_2024-02-21_09-06-40.jpg": "/For_my_Love/static/media/photo_2024-02-21_09-06-40.c3c400ee1a4c8e93e147.jpg",
+    "static/media/photo_2024-02-21_09-06-25.jpg": "/For_my_Love/static/media/photo_2024-02-21_09-06-25.ecc982fed6a2b7408ae9.jpg",
+    "static/media/photo_2024-02-21_08-34-36.jpg": "/For_my_Love/static/media/photo_2024-02-21_08-34-36.3263a946cb969f011fbf.jpg",
+    "static/media/photo_2024-02-21_09-07-07.jpg": "/For_my_Love/static/media/photo_2024-02-21_09-07-07.73c05e3b40402ada32ab.jpg",
+    "static/media/photo_2024-02-21_09-07-04.jpg": "/For_my_Love/static/media/photo_2024-02-21_09-07-04.c4dfd1f09b549ed2d864.jpg",
+    "static/media/photo_first.jpg": "/For_my_Love/static/media/photo_first.cbfadd9697c36953c678.jpg",
+    "static/media/photo_2024-02-21_09-07-14.jpg": "/For_my_Love/static/media/photo_2024-02-21_09-07-14.54c4d1c57bad7c7ca2ea.jpg",
+    "static/media/photo_2024-02-21_09-07-00.jpg": "/For_my_Love/static/media/photo_2024-02-21_09-07-00.75999cc841c58be10cb2.jpg",
+    "static/media/photo_2024-02-21_08-34-42.jpg": "/For_my_Love/static/media/photo_2024-02-21_08-34-42.108a5ee72d4f651c3d69.jpg",
     "index.html": "/For_my_Love/index.html",
-    "main.999db885.css.map": "/For_my_Love/static/css/main.999db885.css.map",
-    "main.a4a32c94.js.map": "/For_my_Love/static/js/main.a4a32c94.js.map"
+    "main.dc91be53.css.map": "/For_my_Love/static/css/main.dc91be53.css.map",
+    "main.00dba133.js.map": "/For_my_Love/static/js/main.00dba133.js.map"
   },
   "entrypoints": [
-    "static/css/main.999db885.css",
-    "static/js/main.a4a32c94.js"
+    "static/css/main.dc91be53.css",
+    "static/js/main.00dba133.js"
   ]
 }
