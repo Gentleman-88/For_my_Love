@@ -119,9 +119,6 @@
   gap: 80px;
 }
 
-.register_btn {
-}
-
 .login_btn {
   display: flex;
   align-items: center;
@@ -160,3 +157,14 @@
 .my_contacts_btn:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+/* .element-animation {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+} */
