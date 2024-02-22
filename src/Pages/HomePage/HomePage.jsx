@@ -1,30 +1,67 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import './Home.css';
 
+const textAnimation = {
+  hidden: {
+    y: -10,
+    opacity: 0,
+  },
+  visible: custom => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
+
+const buttonAnimation = {
+  hidden: {
+    x: 100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
+
+const buttonsAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
+
+const buttonssAnimation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
+
 const HomePage = () => {
-  // function onEntry(entry) {
-  //   entry.forEach(change => {
-  //     if (change.isIntersecting) {
-  //       change.target.classList.add('element-show');
-  //     }
-  //   });
-  // }
-
-  // let options = {
-  //   threshold: [0.5],
-  // };
-  // let observer = new IntersectionObserver(onEntry, options);
-  // let elements = document.querySelectorAll('.element-animation');
-
-  // for (let elm of elements) {
-  //   observer.observe(elm);
-  // }
-
   return (
     <div className="homePage">
-      <div className="hello_Page_Container">
-        <ul className="title">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={textAnimation}
+        custom={2}
+        className="hello_Page_Container"
+      >
+        <motion.ul variants={textAnimation} custom={4} className="title">
           <li className="list_item">Х</li>
           <li className="list_item">Е</li>
           <li className="list_item">Л</li>
@@ -32,10 +69,14 @@ const HomePage = () => {
           <li className="list_item">О</li>
           <li className="list_item">О</li>
           <li className="list_item">У</li>
-        </ul>
-        <p className="info">Цей сайт зроблений для тебе Катюша</p>
-        <p className="info">Вибирай куда хочеш першим ділом</p>
-        <ul className="nav_list">
+        </motion.ul>
+        <motion.p variants={buttonAnimation} custom={5} className="info">
+          Цей сайт зроблений для тебе Катюша
+        </motion.p>
+        <motion.p variants={buttonsAnimation} custom={6} className="info">
+          Вибирай куда хочеш першим ділом
+        </motion.p>
+        <motion.ul custom={7} variants={buttonssAnimation} className="nav_list">
           <NavLink to="/Love" className="nav_item">
             Хронологія відносин
           </NavLink>
@@ -45,8 +86,8 @@ const HomePage = () => {
           <NavLink to="/Photos" className="nav_item">
             Наші фоточки
           </NavLink>
-        </ul>
-      </div>
+        </motion.ul>
+      </motion.div>
     </div>
   );
 };

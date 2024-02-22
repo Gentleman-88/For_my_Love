@@ -1,10 +1,29 @@
 import Strike from 'components/Strike/Strike';
+import { motion } from 'framer-motion';
 import Tile from 'components/Tile/Tile';
 import './Board.css';
 
+const buttonssAnimation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
+
 const Board = ({ tiles, onTileClick, playerTurn, strikeClass }) => {
   return (
-    <div className="board">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      variants={buttonssAnimation}
+      custom={2}
+      className="board"
+    >
       <Tile
         playerTurn={playerTurn}
         onClick={() => onTileClick(0)}
@@ -59,7 +78,7 @@ const Board = ({ tiles, onTileClick, playerTurn, strikeClass }) => {
         value={tiles[8]}
       />
       <Strike strikeClass={strikeClass} />
-    </div>
+    </motion.div>
   );
 };
 

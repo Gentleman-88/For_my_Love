@@ -1,9 +1,22 @@
 import Board from 'components/Board/Board';
 import React, { useEffect, useState } from 'react';
 import './TicTacToe.css';
+import { motion } from 'framer-motion';
 import GameOver from 'components/GameOver/GameOver';
 import GameState from '../../Redux/game/gameStore';
 import Reset from 'components/Reset/Reset';
+
+const buttonssAnimation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
 
 const PLAYER_X = 'X';
 const PLAYER_O = 'O';
@@ -84,7 +97,11 @@ const TicTacToe = () => {
   };
 
   return (
-    <div>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      variants={buttonssAnimation}
+    >
       <h1 className="tic_title">Хрестеки-Нолікі</h1>
       <Board
         playerTurn={playerTurn}
@@ -94,7 +111,7 @@ const TicTacToe = () => {
       />
       <GameOver gameState={gameState} />
       <Reset gameState={gameState} onReset={handleReset} />
-    </div>
+    </motion.div>
   );
 };
 
