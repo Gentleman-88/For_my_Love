@@ -18,6 +18,9 @@ const Navigation = () => {
         <NavLink to="/Photos" className={css.btn_photo}>
           Наші топові фоточки
         </NavLink>
+        <NavLink to="/LoveInYou" className={css.btn_rel}>
+          Що я в тобі люблююю
+        </NavLink>
       </header>
       <main>
         <Suspense fallback={null}>

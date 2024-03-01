@@ -4,6 +4,7 @@ import Navigation from './Navigation/Navigation';
 import HomePage from 'Pages/HomePage/HomePage';
 import GamePage from 'Pages/GamePage/GamePage';
 import PhotoPage from 'Pages/PhotoPage/PhotoPage';
+import LoveInYou from 'Pages/LoveInYou/LoveInYou';
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
         <Route path="/love" element={<Love />} />
         <Route path="/Game" element={<GamePage />} />
         <Route path="/Photos" element={<PhotoPage />} />
+        <Route path="/LoveInYou" element={<LoveInYou />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Route>
     </Routes>
