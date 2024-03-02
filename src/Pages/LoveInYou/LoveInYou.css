@@ -2,7 +2,121 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-color: #ddc2cb;
   min-height: 682px;
+}
+
+.love_title {
+  color: aliceblue;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 300px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.birthday-present {
+  position: relative;
+}
+
+.birthday-present:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+  width: 190px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.present {
+  position: relative;
+  border-radius: 7px;
+  width: 150px;
+  height: 100px;
+  background-color: #87c2f6;
+}
+
+.present:before {
+  content: '';
+  position: absolute;
+  left: 62px;
+  width: 25px;
+  height: 100px;
+  background-color: #be0c0c;
+}
+
+.present:after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  box-shadow: inset 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#invisible-checkbox {
+  display: none;
+}
+
+.cover {
+  position: absolute;
+  top: -40px;
+  left: -10px;
+  width: 170px;
+  height: 40px;
+  border-radius: 7px;
+  transform-origin: bottom left;
+  background-color: #f26896;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cover:before {
+  content: '';
+  position: absolute;
+  left: 69px;
+  width: 25px;
+  height: 40px;
+  background-color: #be0c0c;
+}
+
+.cover:after {
+  content: '';
+  position: absolute;
+  top: -33px;
+  left: 69px;
+  width: 5px;
+  height: 0;
+  transform: rotate(-90deg);
+  border-top: 20px solid #be0c0c;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #be0c0c;
+  border-left: 0px solid transparent;
+  border-radius: 5px;
+}
+
+.happybirthday {
+  z-index: 1;
+  position: absolute;
+  left: 5px;
+  color: aliceblue;
+  font-size: 35px;
+  text-align: center;
+  transition: 0.6s;
+  opacity: 0;
+}
+
+#invisible-checkbox:checked + .cover {
+  transform: rotate(-105deg) scaleX(0.8);
+}
+
+#invisible-checkbox:checked ~ .happybirthday {
+  transform: translateY(-280px);
+  opacity: 1;
 }

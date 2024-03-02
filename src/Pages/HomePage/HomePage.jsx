@@ -81,10 +81,13 @@ const HomePage = () => {
             Хронологія відносин
           </NavLink>
           <NavLink to="/Game" className="nav_item">
-            Гра
+            Хрестики/Нолікі
           </NavLink>
           <NavLink to="/Photos" className="nav_item">
             Наші фоточки
+          </NavLink>
+          <NavLink to="/LoveInYou" className="nav_item">
+            Що я в тобі люблююю
           </NavLink>
         </motion.ul>
       </motion.div>

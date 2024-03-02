@@ -12,8 +12,8 @@ const Navigation = () => {
         <NavLink to="/love" className={css.btn_rel}>
           Хронологія наших відносин
         </NavLink>
-        <NavLink to="/Game" className={css.btn_game}>
-          Гра
+        <NavLink to="/Game" className={css.btn_photo}>
+          Хрестики/Нолікі
         </NavLink>
         <NavLink to="/Photos" className={css.btn_photo}>
           Наші топові фоточки
