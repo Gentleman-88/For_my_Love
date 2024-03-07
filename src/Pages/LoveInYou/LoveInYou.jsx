@@ -29,7 +29,7 @@ const LoveInYou = () => {
         initial="hidden"
         whileInView="visible"
         variants={buttonssAnimation}
-        custom={1}
+        custom={2}
       >
         <div class="present">
           <input id="invisible-checkbox" type="checkbox" />
