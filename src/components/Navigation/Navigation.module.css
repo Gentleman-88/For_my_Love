@@ -88,3 +88,15 @@
 .btn_photo:focus {
   box-shadow: 0 5px 13px rgb(213, 127, 127);
 }
+
+@media screen and (max-width: 768px) {
+  .btn {
+    display: none;
+  }
+  .btn_rel {
+    display: none;
+  }
+  .btn_photo {
+    display: none;
+  }
+}

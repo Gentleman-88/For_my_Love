@@ -35,7 +35,7 @@ const LoveInYou = () => {
           <input id="invisible-checkbox" type="checkbox" />
           <label class="cover" for="invisible-checkbox"></label>
           <div class="happybirthday">
-            Твої оченята. Твій сміх. Твої співи. Тебе всю, всю
+            Твої оченята. Твій сміх. Твої співи. Тебе всю, всю!!!
           </div>
         </div>
       </motion.div>

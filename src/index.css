@@ -9,6 +9,11 @@ body {
   font-family: 'Times New Roman', Times, serif;
 }
 
+::selection {
+  background-color: rgb(215, 92, 184);
+  color: aliceblue;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
