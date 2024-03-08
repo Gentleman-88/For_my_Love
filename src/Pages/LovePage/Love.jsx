@@ -156,6 +156,10 @@ const Love = () => {
             rows="10"
           ></textarea>
         </li>
+        <h3 className={css.laugh}>
+          І ще, не переставай сміятись так, як ти смієшся, я твій сміх дуже
+          люблю ❤️
+        </h3>
       </motion.ul>
     </div>
   );

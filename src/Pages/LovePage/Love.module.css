@@ -31,6 +31,17 @@
   margin-bottom: 10px;
 }
 
+.laugh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-radius: 7px;
+  font-size: 25px;
+  color: aliceblue;
+  margin-bottom: 15px;
+}
+
 .memories {
   border-radius: 7px;
   color: aliceblue;
