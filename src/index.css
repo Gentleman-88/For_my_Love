@@ -1,7 +1,7 @@
 @import-normalize; /* bring in normalize.css styles */
 
 body {
-  background-color: #ffffff;
+  background-color: #c68ea1;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url('../src/Pages/PhotoPage/images/love.jpg');
   background-size: cover;
@@ -17,4 +17,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@media screen and (max-width: 480px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.199)),
+      url('../src/Pages/PhotoPage/images/hearts.jpg');
+  }
 }
