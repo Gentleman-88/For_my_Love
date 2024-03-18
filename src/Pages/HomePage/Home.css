@@ -158,3 +158,30 @@
 .my_contacts_btn:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+@media screen and (max-width: 768px) {
+  .hello_Page_Container {
+    background-color: rgba(224, 217, 217, 0.338);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 10px;
+    padding: 20px;
+    height: 500px;
+    width: 290px;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+  }
+
+  .info {
+    letter-spacing: 1px;
+    color: aliceblue;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    margin-bottom: 20px;
+    width: 310px;
+  }
+}
