@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/For_my_Love/static/css/main.4262806e.css",
+    "main.css": "/For_my_Love/static/css/main.384491f9.css",
     "main.js": "/For_my_Love/static/js/main.877f9c77.js",
     "static/media/hearts.jpg": "/For_my_Love/static/media/hearts.199661d3e12e402f5310.jpg",
     "static/media/photo_2024-02-21_08-34-24.jpg": "/For_my_Love/static/media/photo_2024-02-21_08-34-24.04ee30fd0aec076d8e6d.jpg",
@@ -23,11 +23,11 @@
     "static/media/photo_2024-02-21_09-07-00.jpg": "/For_my_Love/static/media/photo_2024-02-21_09-07-00.75999cc841c58be10cb2.jpg",
     "static/media/photo_2024-02-21_08-34-42.jpg": "/For_my_Love/static/media/photo_2024-02-21_08-34-42.108a5ee72d4f651c3d69.jpg",
     "index.html": "/For_my_Love/index.html",
-    "main.4262806e.css.map": "/For_my_Love/static/css/main.4262806e.css.map",
+    "main.384491f9.css.map": "/For_my_Love/static/css/main.384491f9.css.map",
     "main.877f9c77.js.map": "/For_my_Love/static/js/main.877f9c77.js.map"
   },
   "entrypoints": [
-    "static/css/main.4262806e.css",
+    "static/css/main.384491f9.css",
     "static/js/main.877f9c77.js"
   ]
 }
