@@ -68,3 +68,17 @@
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 18px rgb(213, 127, 127);
 }
+
+@media screen and (max-width: 768px) {
+  .textarea {
+    width: 320px;
+  }
+  .memories {
+    font-size: 25px;
+    min-width: 290px;
+  }
+  .Love {
+    background-color: transparent;
+    padding: 10px;
+  }
+}

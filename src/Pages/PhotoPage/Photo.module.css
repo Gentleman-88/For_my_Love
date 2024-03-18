@@ -61,3 +61,27 @@
   width: 400px;
   height: 400px;
 }
+
+@media screen and (max-width: 768px) {
+  .photo_page {
+    background-color: transparent;
+    margin-left: 35px;
+  }
+  .photo_4 {
+    width: 315px;
+    height: 220px;
+  }
+  .photo_5 {
+    width: 315px;
+    height: 225px;
+  }
+  .photo_7 {
+    width: 315px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .photo_page {
+    margin-left: 0;
+  }
+}

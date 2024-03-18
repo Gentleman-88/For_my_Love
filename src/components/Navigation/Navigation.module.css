@@ -101,9 +101,7 @@
     box-shadow: 0 5px 13px rgb(213, 127, 127);
     min-width: 270px;
   }
-  .btn {
-    display: none;
-  }
+
   .btn_rel {
     display: none;
   }

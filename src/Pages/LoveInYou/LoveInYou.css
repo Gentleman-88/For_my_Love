@@ -120,3 +120,16 @@
   transform: translateY(-280px);
   opacity: 1;
 }
+
+@media screen and (max-width: 768px) {
+  .love_container {
+    background-color: transparent;
+    margin-left: 35px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .love_container {
+    margin-left: 0;
+  }
+}

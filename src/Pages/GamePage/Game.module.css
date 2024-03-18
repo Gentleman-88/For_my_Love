@@ -11,3 +11,16 @@
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width: 768px) {
+  .game {
+    background-color: transparent;
+    margin-left: 27px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .game {
+    margin-left: 0;
+  }
+}
